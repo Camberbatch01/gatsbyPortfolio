@@ -1,10 +1,16 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Banner from "../components/banner"
 import "../components/styles/index.scss"
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPhoneSquare } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+
+library.add(faPhoneSquare)
+library.add(faEnvelope)
 
 const name = "Cameron Moore"
 const desc = "Maths graduate, aspiring software developer"
@@ -14,8 +20,8 @@ const IndexPage = () => (
     {Banner(name, desc)}
     <div className="content">
       <h3>Contact Me</h3>
-      <p>07999 999 999</p>
-      <p>cameron-moore@outlook.com</p>
+      <p><FontAwesomeIcon icon="phone-square" className="icon" id="tel"/> 07999 999 999</p>
+      <p><FontAwesomeIcon icon="envelope" className="icon" id="mail"/> cameron-moore@outlook.com</p>
     </div>
   </Layout>
 )
