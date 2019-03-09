@@ -9,11 +9,11 @@
     margin: 10px 0px;
     display: flex;
     list-style: none;
-    li{
-        display: inline;
-        :hover{
-            color: rgb(51, 131, 180);
-        }
+}
+li{
+    display: inline;
+    :hover{
+        color: rgb(51, 131, 180);
     }
 }
 .myName{
@@ -29,10 +29,44 @@
     margin: 0px 1rem;
     letter-spacing: 1px;
 }
+.options-toggle, .small-screen-nav{
+    display: none;
+}
+.options-toggle:focus{
+    outline: none;
+}
+.small-screen-nav-on{
+    display: block;
+    li{
+        display: block;
+        border-top: 1px solid lightgrey;
+    }
+    padding-top: 4px;
+}
+.topBar, .bottomBar{
+    display: block;
+}
  
+@media all and (min-width : 601px){
+    .small-screen-nav-on{
+        display: none;
+    }
+}
 
 @media all and (max-width: 600px) {
     .container {
       flex-wrap: wrap;
+    }
+    .options-toggle{
+        display: block;
+        background: white;
+        border: none;
+        height: 100%;
+        :hover{
+            cursor: pointer;
+        }
+    }
+    .large-screen-nav{
+        display: none;
     }
   }

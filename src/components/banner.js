@@ -1,12 +1,18 @@
 import React from "react"
 import "../components/styles/banner.scss"
+import profileImage from "../components/profileImage"
 
-const pageInfo = (name, desc) => {
+const profPic = (pic) => {
+    if (pic) return profileImage();
+}
+
+const pageInfo = (info) => {
     return (
         <div className="banner">
             <div className="bannerContent">
-                <h1>{name}</h1>
-                <p>{desc}</p>  
+                <div className="profPic">{profPic(info.img)}</div>
+                <h1>{info.name}</h1>
+                <p>{info.desc}</p>  
             </div>
         </div>
     );

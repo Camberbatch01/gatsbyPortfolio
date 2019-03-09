@@ -12,12 +12,17 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 library.add(faPhoneSquare)
 library.add(faEnvelope)
 
-const name = "Cameron Moore"
-const desc = "Maths graduate, aspiring software developer"
+const infoObj = {
+  name: "Cameron Moore",
+  desc: "Maths graduate, aspiring software developer",
+  img: true
+}
+
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    {Banner(name, desc)}
+    {Banner(infoObj)}
     <div className="content">
       <h3>Contact Me</h3>
       <p><FontAwesomeIcon icon="phone-square" className="icon" id="tel"/> 07999 999 999</p>

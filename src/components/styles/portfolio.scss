@@ -5,14 +5,26 @@
     width: 100%;
     box-shadow: 1px 1px 1px 1px lightgrey;
     margin-bottom: 2rem;
-    padding: 1rem;
+    padding: 1.2rem;
     display: flex;
 }
 .img{
     width: 30%;
 } 
+
 .projText{
     width: 70%;
+    padding: 1.5rem;
+    h3{
+        margin-bottom: 1rem;
+    }
+    a{
+    text-decoration: none;
+    color: black;
+    }
+    a:hover{
+    color: rgb(51, 131, 180);
+    }
 }
 .github{
     color: grey;
