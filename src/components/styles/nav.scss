@@ -31,15 +31,20 @@ li{
 }
 .options-toggle, .small-screen-nav{
     display: none;
+    margin: 0;
+    height: 100%;
 }
 .options-toggle:focus{
     outline: none;
 }
 .small-screen-nav-on{
     display: block;
+    background: rgba(193, 205, 218, 0.144);
     li{
         display: block;
-        border-top: 1px solid lightgrey;
+        .navLinks{
+            display: block;
+        }
     }
     padding-top: 4px;
 }

@@ -1,4 +1,13 @@
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
 .content{
+    animation: 1s ease-out 0s 1 slideInFromLeft;
     max-width: 960px;
     margin: auto;
     padding: 0px 1.0875rem 1.45rem;
