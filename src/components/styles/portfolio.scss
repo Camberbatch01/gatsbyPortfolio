@@ -7,12 +7,14 @@
     margin-bottom: 2rem;
     padding: 1.2rem;
     display: flex;
+    flex-wrap: wrap;
 }
 .img{
     width: 30%;
 } 
-
 .projText{
+    display: flex;
+    flex-direction: column;
     width: 70%;
     padding: 1.5rem;
     h3{
@@ -21,6 +23,7 @@
     a{
     text-decoration: none;
     color: black;
+    margin-top: 2.5rem;
     }
     a:hover{
     color: rgb(51, 131, 180);
@@ -28,4 +31,14 @@
 }
 .github{
     color: grey;
+}
+
+@media all and (max-width: 600px) {
+    .img{
+        width: 75%;
+        margin: auto;
+    }
+    .projText{
+        width: 100%;
+    }
 }

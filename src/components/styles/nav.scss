@@ -32,7 +32,6 @@ li{
 .options-toggle, .small-screen-nav{
     display: none;
     margin: 0;
-    height: 100%;
 }
 .options-toggle:focus{
     outline: none;
@@ -41,34 +40,29 @@ li{
     display: block;
     background: rgba(193, 205, 218, 0.144);
     li{
-        display: block;
         .navLinks{
             display: block;
         }
     }
     padding-top: 4px;
 }
-.topBar, .bottomBar{
-    display: block;
-}
  
-@media all and (min-width : 601px){
+@media all and (min-width: 601px){
     .small-screen-nav-on{
         display: none;
     }
 }
 
 @media all and (max-width: 600px) {
-    .container {
-      flex-wrap: wrap;
-    }
     .options-toggle{
         display: block;
-        background: white;
+        background-color: white;
+        font-size: 1.5rem;
         border: none;
-        height: 100%;
+        padding: 0px 10px 5px 10px;
         :hover{
             cursor: pointer;
+            color: rgb(51, 131, 180);
         }
     }
     .large-screen-nav{

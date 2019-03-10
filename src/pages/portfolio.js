@@ -20,17 +20,17 @@ const Port = () => (
     <div className="content">
       <div className="portfolio">
         <div className="project1">
-          <span className="img">{Image()}</span>
+          <span className="img"><a href="https://inspiring-archimedes-a3ab05.netlify.com/">{Image()}</a></span>
           <span className="projText">
             <h3><a href="https://inspiring-archimedes-a3ab05.netlify.com/">Broomehill website</a></h3>
             <p>
               A project I worked on during my internship. A simple website, with blog integration, built from the ground up using gatsby with react.
-              It was designed in template form with generic information that would be changed later.
+              It was designed more as a template with generic information that would be changed later.
             </p>
           </span>
         </div>
         <div className="project2">
-          <span className="img">{Image()}</span>
+          <span className="img"><a href="https://sleepy-ravine-75565.herokuapp.com/">{Image()}</a></span>
           <span className="projText">
             <h3><a href="https://sleepy-ravine-75565.herokuapp.com/">Flashcard App</a></h3>
             <p>

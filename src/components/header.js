@@ -34,7 +34,9 @@ const Header = ({ siteTitle }) => (
           <li><Link className="navLinks" activeStyle={{color: "rgb(51, 131, 180)"}} to={`/about/`}>about</Link></li>
           <li><Link className="navLinks" activeStyle={{color: "rgb(51, 131, 180)"}} to="/portfolio">portfolio</Link></li>
         </div>
-        <button className="options-toggle" onClick={()=>toggleOptions()}><FontAwesomeIcon icon="bars"/></button>
+        <div className="btnDiv">
+          <button className="options-toggle" onClick={()=>toggleOptions()}><FontAwesomeIcon icon="bars"/></button>
+        </div>
       </ul>
     </div>
     <div className="bottomBar">
@@ -45,8 +47,6 @@ const Header = ({ siteTitle }) => (
         </ul>
       </div>
     </div>
-      
-
   </header>
 )
 
