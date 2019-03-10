@@ -3,7 +3,6 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Banner from "../components/banner"
-import Image from "../components/image"
 import "../components/styles/index.scss"
 import "../components/styles/portfolio.scss"
 
@@ -20,7 +19,7 @@ const Port = () => (
     <div className="content">
       <div className="portfolio">
         <div className="project1">
-          <span className="img"><a href="https://inspiring-archimedes-a3ab05.netlify.com/">{Image()}</a></span>
+          <span className="img"><a href="https://inspiring-archimedes-a3ab05.netlify.com/"><img alt="Broomehill website" src="../images/broomehill.png"/></a></span>
           <span className="projText">
             <h3><a href="https://inspiring-archimedes-a3ab05.netlify.com/">Broomehill website</a></h3>
             <p>
@@ -30,7 +29,7 @@ const Port = () => (
           </span>
         </div>
         <div className="project2">
-          <span className="img"><a href="https://sleepy-ravine-75565.herokuapp.com/">{Image()}</a></span>
+          <span className="img"><a href="https://sleepy-ravine-75565.herokuapp.com/"><img alt="Flashcard app" src="../images/flashcard.png"/></a></span>
           <span className="projText">
             <h3><a href="https://sleepy-ravine-75565.herokuapp.com/">Flashcard App</a></h3>
             <p>

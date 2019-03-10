@@ -55,7 +55,7 @@ const IndexPage = () => (
         </div>
       </form>
 
-      <p><FontAwesomeIcon icon="phone-square" className="icon" id="tel"/> 07999 999 999</p>
+      <p><FontAwesomeIcon icon="phone-square" className="icon" id="tel"/> 07464 936 728</p>
       <p><FontAwesomeIcon icon="envelope" className="icon" id="mail"/> cameron-moore@outlook.com</p>
     </div>
   </Layout>
