@@ -26,7 +26,7 @@ const PortfolioImage2 = () => (
         }
       }
     `}
-    render={data =>  <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
+    render={data =>  <Img className="projImg" fluid={data.placeholderImage.childImageSharp.fluid} />}
   />
 )
 export default PortfolioImage2

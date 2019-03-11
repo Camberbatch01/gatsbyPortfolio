@@ -25,39 +25,46 @@ const IndexPage = () => (
     {Banner(infoObj)}
     <div className="content">
       <h3>Contact Me</h3>
-      <form  
-          name="contact"
-          method="post"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
-      >
-        <input type="hidden" name="form-name" value="contact" />
-        <div hidden>
-          <label>
-              Don’t fill this out:{" "}
-              <input name="bot-field" />
-          </label>
-        </div>
-        <div>
-          <label htmlFor="name">Full Name*</label>
-          <input type="text" name="name" id="name" required></input>
-        </div>
-        <div>
-          <label htmlFor="email">Email*</label>
-          <input type="email" name="email" id="email" placeholder="yourname@hotmail.com" required></input>
-        </div>
-        <div>
-          <label htmlFor="message">Message*</label>
-          <textarea name="message" id="message" type="text" required></textarea>
-        </div>
-        <div>
-          <button id="submitForm" type="submit">Submit</button>
-        </div>
-      </form>
 
-      <p><FontAwesomeIcon icon="phone-square" className="icon" id="tel"/> 07464 936 728</p>
-      <p><FontAwesomeIcon icon="envelope" className="icon" id="mail"/> cameron-moore@outlook.com</p>
-    </div>
+      <div className="contact-container">
+          <form  
+              name="contact"
+              method="post"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+          >
+            <input type="hidden" name="form-name" value="contact" />
+            <div hidden>
+              <label>
+                  Don’t fill this out:{" "}
+                  <input name="bot-field" />
+              </label>
+            </div>
+            <div>
+              <label htmlFor="name">Full Name*</label>
+              <input type="text" name="name" id="name" required></input>
+            </div>
+            <div>
+              <label htmlFor="email">Email*</label>
+              <input type="email" name="email" id="email" placeholder="yourname@hotmail.com" required></input>
+            </div>
+            <div>
+              <label htmlFor="message">Message*</label>
+              <textarea name="message" id="message" type="text" required></textarea>
+            </div>
+            <div>
+              <button id="submitForm" type="submit">Submit</button>
+            </div>
+          </form>
+
+          <div className="contact-info">
+            <p><FontAwesomeIcon icon="phone-square" className="icon" id="tel"/> 07464 936 728</p>
+            <p><FontAwesomeIcon icon="envelope" className="icon" id="mail"/> cameron-moore@outlook.com</p>
+          </div>
+
+        </div>
+      </div>
+      
   </Layout>
 )
 
