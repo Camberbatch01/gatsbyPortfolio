@@ -37,6 +37,7 @@ li{
     outline: none;
 }
 .small-screen-nav-on{
+    animation: 0.25s ease-out 0s 1 slideInFromTop;
     display: block;
     background: rgba(193, 205, 218, 0.144);
     li{
@@ -67,5 +68,13 @@ li{
     }
     .large-screen-nav{
         display: none;
+    }
+  }
+  @keyframes slideInFromTop {
+    0% {
+      transform: translateY(-25%);
+    }
+    100% {
+      transform: translateY(0);
     }
   }
