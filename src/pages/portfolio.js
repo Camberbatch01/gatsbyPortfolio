@@ -25,8 +25,8 @@ const Port = () => (
           <span className="projText">
             <h3><a href="https://inspiring-archimedes-a3ab05.netlify.com/">Broomehill website</a></h3>
             <p>
-              A project I worked on during my internship. A simple website, with blog integration, built from the ground up using gatsby with react.
-              It was designed more as a template with generic information that would be changed later.
+              A project I worked on during my internship. A website with blog integration, built from the ground up using gatsby with react.
+              Home page with banner, info and link to latest blog post. Blog page, with integrated tags and date filters, and a contact page that emails you directly. 
             </p>
           </span>
         </div>
@@ -35,8 +35,9 @@ const Port = () => (
           <span className="projText">
             <h3><a href="https://sleepy-ravine-75565.herokuapp.com/">Flashcard App</a></h3>
             <p>
-              A project I worked on to get to grips with back-end. A Flashcard app built with node.js, express, mongoose and ejs.
-              Allows a user to add/edit/remove decks and their cards inside. A quiz also tests your knowledge of a particular deck.
+              A project I worked on with the inspiration of language learning, but can be used for anything. A Flashcard app built with node.js, express, mongoose and ejs.
+              Allows a user to add/edit/remove decks and their cards inside. Can share your decks to a community page that all users can see, where you, or other users can download another's deck.
+              You can also learn your decks through a test where you have to guess the word, given the front of the card.
             </p>
           </span>
         </div>
